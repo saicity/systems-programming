@@ -1,0 +1,40 @@
+Notes from my Notion page
+
+- A variable holds a certain value of a data type and has a fixed memory when implemented depending on the data type used.
+- It allows programmers to be more efficient and use the correct data type in order to not waste memory, use the correct arithmetic operations, understand bitwise operations which is important in many computing algorithms, and helps in program design and debugging when data types start to get more complex.
+- An int stores whole numbers and a float stores real numbers.
+- tba
+- tba
+- A bit is a binary valued variable which is short for binary digit. The two possible values are 1 or 0. On a computing chip they are repesented by high voltage (1-5 V) and low voltage (0-0.5 V)
+- A byte is a sequence of 8 bits.
+- A method of interpreting a group of bits.
+- A magnitude-only bit model is where each bit represents a nonnegative integer power of 2. Counting by each place value is from right to left.
+- The maximum value range 8 bits can store is 255. This is because 2^8 - 1 is 255. In computing, we start counting from 0 hence the subtraction of 1.
+- Least significant bits are the lowest powers of 2 which represent the smallest portion of the bit sequence so they are located to the far right.
+- Most significant bits are the highest powers of 2 which represent the largest portion of the bit sequence so they are located to the far left.
+- 32 bits are more useful than 8 bits because they can represent a larger range of values using the magnitude-only bit model, (around 4.294 billion).
+- PC and workstations have 4 GB of memory because with 32 wires, a computer system can address ~4 billion different memory locations or 4 giga different memory locations. If each memory location is a byte and a computer has a 32 bit architecture system then it can only have 4 GB of memory.
+- 2^64 - 1= ***18,446,744,073,709,551,616 - 1 = 18,446,744,073,709,551,615. With 64 wires, a computer system can address 18 quintillion different memory locations or 18 EB of ram.***
+- Unsigned char (1 byte representing 0 to 255), Unsigned int (4 bytes representing 0 to 4.294 billion), unsigned short (2 bytes, representing 0 to 65,535
+- A sign-magnitude bit model allocates the highest order bit to be the sign bit.
+- A value of 0 means that the bit string represents a positive number and a value of 1 represents a negative number.
+- Representing 0 is a problem in sign-magnitude bit model because a positive and negative 0 doesnt make any sense.
+- Binary addition is a problem in sign-magnitude bit model because when using a negative and a positive number, it performs subtraction instead.
+- In two’s complement bit model, negative numbers are represented by getting the positive version of the number you’d like to make negative and inversing and adding one to it.
+- Two’s complement bit model can represent values -128 to 127 for 8 bit.
+- The data types in C that use two’s complement are char 1 byte (-128 to 127), int 4 bytes (-2 billion to + 2 billion), short int 2 bytes (-32 thousant to +32 thousand)
+- The floating point bit model uses +/- 1.f x 2^e where, 1 bit represents the sign and the remaining bits are divided between the fraction and exponent.
+- The fixed point bit model has the position of numbers in base 10 that can be represented as a fraction being fixed.
+- In the floating point bit model, 32 bits are divided into 23 bits for the fraction and 8 for the exponent.
+- Floats and double store 4 bytes and 8 bytes respectively
+- ASCII and Unicode bit models represent non numeric data and escape characters. There are a total of 128 ASCII bit patterns and each bit pattern uses 7 bits with a 1 bit padding.
+- Char and unsigned char both use the ascii bit model.
+- Doing operations on char or int on a bit level
+- AND = &, OR = |, XOR = ^, NOT = ~
+- Right shift is >>, Left shift is <<
+- Bit operators are intended to be used on char and int, not floating point numbers.
+- NOT inverts every bit in a variable.
+- AND takes two bit strings (p and q) and evaluates them using the AND operator
+- OR takes two bit strings and evaluates them using the OR opertor
+- XOR takes two bit strings and evaluates them using the XOR operator
+- Right shift and left shift moves every bit in the variable by the bit positions specified after the operator into higher or lower order bits.
